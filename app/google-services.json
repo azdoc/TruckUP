@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "978964634529",
+    "firebase_url": "https://truckup-5e2c0.firebaseio.com",
+    "project_id": "truckup-5e2c0",
+    "storage_bucket": "truckup-5e2c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978964634529:android:c1f1083e17719bbc",
+        "android_client_info": {
+          "package_name": "com.here.truckup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978964634529-rhf6qbblv6ps3imkidgofuparl6vc2ve.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.here.truckup",
+            "certificate_hash": "83f31114488b12a53f9e65725a9cf160c5c3298a"
+          }
+        },
+        {
+          "client_id": "978964634529-uns70954t15jgid03bodsrjjpg8unijr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.here.truckup",
+            "certificate_hash": "a1dbdefc792156c4e7160bd24d2958ece54e98c7"
+          }
+        },
+        {
+          "client_id": "978964634529-g4qe2o2cubakm97847n2gko7906cla11.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.here.truckup",
+            "certificate_hash": "362c9db034c514e2292607051cfd77193c297d35"
+          }
+        },
+        {
+          "client_id": "978964634529-ifalu2vra1d3dgoh7npjprcvtbdo5mv4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQC1NOVBvYJ5cg5dgBxkIflXVddDvajMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978964634529-ifalu2vra1d3dgoh7npjprcvtbdo5mv4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

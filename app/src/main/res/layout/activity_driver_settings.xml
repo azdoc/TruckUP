@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gra"
+    android:orientation="vertical"
+    android:padding="20sp"
+    tools:context=".DriverSettingsActivity">
+
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-42dp"
+        android:layout_marginTop="135dp"
+        android:hint="Name"
+        android:singleLine="true"
+        android:textColor="#f9f9f9"
+        android:textColorHint="#c2bebe" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/car"
+        android:layout_alignStart="@+id/car"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="3dp"
+        android:hint="Phone"
+        android:inputType="number"
+        android:textColor="#f9f9f9"
+        android:textColorHint="#c2bebe" />
+
+    <EditText
+        android:id="@+id/car"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-42dp"
+        android:layout_marginTop="180dp"
+        android:hint="Truck"
+        android:textColor="#f9f9f9"
+        android:textColorHint="#c2bebe" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="187dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/TataAce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioGroup"
+            android:text="TataAce"
+            android:textColor="#ededf1" />
+
+        <RadioButton
+            android:id="@+id/TataOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TataOpen"
+            android:textColor="#ededf1"  />
+
+        <RadioButton
+            android:id="@+id/Tata407"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tata407"
+            android:textColor="#ededf1"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="89dp"
+        android:background="@drawable/buttonshape"
+        android:text="confirm"
+        android:textColor="#fffbfb" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/buttonshape"
+        android:text="back"
+        android:textColor="#fffbfb" />
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignParentTop="true" />
+
+    <ProgressBar
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/profileImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-13dp"
+        android:indeterminateOnly="true"
+        android:outlineAmbientShadowColor="#ff0206"
+        android:visibility="gone"/>
+
+</RelativeLayout>

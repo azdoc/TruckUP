@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.here.truckup">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        android:maxSdkVersion="22" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/deliverytruck"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/deliverytruck"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".onAppKilled" android:stopWithTask="false"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DriverLoginActivity"
+            android:label="Driver Account"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".CustomerSettingsActivity" />
+        <activity
+            android:name=".CustomerLoginActivity"
+            android:label="Customer Account"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".DriverMapActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CustomerMapActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="WXnIrho0y9mkXRMzEEz4" />
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="49GmbkvBgqVSz80K0drbdQ" />
+        <meta-data
+            android:name="com.here.android.maps.license.key"
+            android:value="TIoQjAlGNpZ/ATMkJxKMHRwJfesQ5beSyeLlYNYOZJ30Ir7wvP103ZiZ8CdbztDpkynOGHcWkV+pJdEytQ0LF2GtkY4F3qRle0XMCG1XnUqkJO6dpNbTUE7U6TH8xwfmMTA14VIavLiVTTFb5jTrCGgxd2yP1ZPTc8AW3/HrELXt15pk+dBDu+7mgQXGQVsD5SnX4R6LfM3OMzCqId+3cuqngTlOtE8sjWeYtdRhRLcOXbu2hLxIjbiCtLllS1Ntx7o8H4v1Dle+FJTC+3N9JPOZqv6caUP2DC7gqMqmTpaf5fi02Y9JDl7OL8XiexRM4gfbA1FywQP/erLoZchA63vxhl6bsN07VEUpIcSfP7VZglwfSsfnkl2ESq3yewDSXu7vd95E5NMjWsXxBf+a2PTu050EYZIH25LqSOO4pX58EI6KUFpX5otNX09vtPIw36orS+4znDDtnsWU5X3aWGzYtupOFjgWR1GdDL7K8as5SajQhXmLSZ3UiD9GuYOzq01nvbKJPECDReHx8djgtbWsJwKpfRVAPiKWgKQm6CoqhCWq6DNIOdNe14QzIByZhxYB+ajipr26l58rzDe81e/CrikTTu1f+bsN2+lbEyYMFs/n22liP+knzpXgM8xjf094npdT6DwoK/JRZAXv6n38rJivGFrkHQnT2LXCCio=" />
+        <!--
+        Developers should always provide custom values for each of {YOUR_LABEL_NAME} and {YOUR_INTENT_NAME}.
+        Do not reuse HERE SDK defaults.
+        -->
+        <meta-data
+            android:name="INTENT_NAME"
+            android:value="{YOUR_INTENT_NAME}" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name="com.here.android.mpa.service.MapService"
+            android:exported="false"
+            android:label="{YOUR_LABEL_NAME}">
+            <intent-filter>
+                <action android:name="{YOUR_INTENT_NAME}" />
+            </intent-filter>
+        </service>
+        <!--
+            Embed the HERE Positioning Service.
+            For more information, see the HERE SDK Developer's Guide
+        -->
+        <service
+            android:name="com.here.services.internal.LocationService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":remote" />
+
+        <activity android:name=".DriverSettingsActivity" />
+        <activity
+            android:name=".ForgotpasswordActivity"
+            android:label="Reset Password" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".HistorySingleActivity"/>
+        <activity android:name=".ResultListActivity"/>
+    </application>
+
+</manifest>
